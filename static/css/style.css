@@ -1,0 +1,79 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Form on left, map on right */
+    gap: 20px;
+    padding: 20px;
+    height: calc(100vh - 80px); /* Full height minus header */
+}
+
+/* Form Section */
+#form-container {
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+#form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#form-container label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+#form-container input,
+#form-container button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#form-container button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+#form-container button:hover {
+    background-color: #45a049;
+}
+
+#results {
+    margin-top: 20px;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+/* Map Section */
+#map {
+    height: 100%;
+    width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
