@@ -1,8 +1,8 @@
-
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request, jsonify, send_from_directory
+import os
 import requests
 
-app = Flask(__name__,template_folder="docs")
+app = Flask(__name__, template_folder="docs")
 
 OPEN_WEATHER_API_KEY = "01fecea7c070babba3ef42c3cb86c9c2"
 TOMTOM_API_KEY = "C9sIdQTP5usyf5ljhEkh3jyK6vsblkED"
@@ -48,6 +48,10 @@ def get_location_name(lat, lon):
 @app.route("/")
 def home():
     return render_template("index.html")
+
+@app.route("/<path:filename>")
+def static_files(filename):
+    return send_from_directory("docs", filename)
 
 @app.route("/optimize", methods=["POST"])
 def optimize():
