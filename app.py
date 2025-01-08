@@ -2,7 +2,7 @@
 from flask import Flask, render_template, request, jsonify
 import requests
 
-app = Flask(__name__)
+app = Flask(__name__,template_folder="docs")
 
 OPEN_WEATHER_API_KEY = "01fecea7c070babba3ef42c3cb86c9c2"
 TOMTOM_API_KEY = "C9sIdQTP5usyf5ljhEkh3jyK6vsblkED"
