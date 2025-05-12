@@ -60,8 +60,3 @@ To run the project locally:
 | `docs/`       | Documentation files                  |
 | `README.md`   | Project overview and instructions    |
 
----
-
-## Contact
-
-For questions or contributions, please open an issue on the [GitHub repository](https://github.com/Than1612/Fedex_map)[1].
