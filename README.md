@@ -11,7 +11,7 @@ A project developed for a FedEx hackathon, focused on mapping and logistics solu
 ## Features
 
 - Interactive map visualization
-- Integration with mapping APIs (see `api.txt`)
+- Mapping APIs (see `api.txt`)
 - Python backend (`app.py`)
 - Web-based interface (see live demo link above)
 
@@ -28,7 +28,6 @@ To run the project locally:
    ```
 
 2. **Install dependencies**  
-   *(Inferred from `app.py`)*  
    ```bash
    pip install -r requirements.txt
    ```
@@ -47,7 +46,8 @@ To run the project locally:
 
 - Run the app locally.
 - Use the interactive map to visualize FedEx-related logistics data.
-- API integration details can be found in `api.txt`.
+- Requirement details can be found in `requirements.txt`.
+- API details can be found in `api.txt`.
 
 ---
 
