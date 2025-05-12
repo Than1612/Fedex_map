@@ -28,7 +28,7 @@ To run the project locally:
    ```
 
 2. **Install dependencies**  
-   *(Assuming requirements are listed in `requirements.txt` or can be inferred from `app.py`)*  
+   *(Inferred from `app.py`)*  
    ```bash
    pip install -r requirements.txt
    ```
@@ -45,7 +45,7 @@ To run the project locally:
 
 ## Usage
 
-- Visit the live demo or run the app locally.
+- Run the app locally.
 - Use the interactive map to visualize FedEx-related logistics data.
 - API integration details can be found in `api.txt`.
 
